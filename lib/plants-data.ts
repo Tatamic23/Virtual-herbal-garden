@@ -42,7 +42,7 @@ export const plants: Plant[] = [
     shortDescription: "Versatile medicinal tree with antibacterial and antifungal properties.",
     description:
       "Neem is a fast-growing tree native to the Indian subcontinent. All parts of the tree, including leaves, bark, seeds, and oil, have medicinal properties. It's known for its bitter taste and strong odor, which contributes to its effectiveness as a natural pesticide and medicinal herb.",
-    image: "/images/neem.jpg",
+    image: "/public/images/neem.jpg",
     properties: ["Antibacterial", "Antifungal", "Antiparasitic", "Anti-inflammatory", "Antioxidant"],
     classification: {
       family: "Meliaceae",
@@ -90,7 +90,7 @@ export const plants: Plant[] = [
     shortDescription: "Succulent plant with gel-filled leaves known for healing properties.",
     description:
       "Aloe vera is a succulent plant species with thick, fleshy leaves that contain a clear gel. This gel is rich in vitamins, minerals, amino acids, and antioxidants, making it highly beneficial for skin health and wound healing. The plant is stemless or very short-stemmed with leaves that grow in a rosette pattern.",
-    image: "/images/aloevera.jpg",
+    image: "/public/images/aloevera.jpg",
     properties: ["Anti-inflammatory", "Antimicrobial", "Moisturizing", "Wound healing", "Antioxidant"],
     classification: {
       family: "Asphodelaceae",
@@ -139,7 +139,7 @@ export const plants: Plant[] = [
     shortDescription: "Sacred herb in Ayurveda with adaptogenic and immunomodulatory properties.",
     description:
       "Tulsi, also known as Holy Basil, is a highly revered plant in Hinduism and Ayurvedic medicine. It has a strong aroma with hints of clove, lemon, and mint. The plant typically has green or purple leaves and produces small purple flowers. It's considered an adaptogen, helping the body adapt to stress and promoting mental balance.",
-    image: "/images/tulsi.jpg",
+    image: "/public/images/tulsi.jpg",
     properties: ["Adaptogenic", "Immunomodulatory", "Antioxidant", "Antimicrobial", "Anti-inflammatory"],
     classification: {
       family: "Lamiaceae",
@@ -187,7 +187,7 @@ export const plants: Plant[] = [
     shortDescription: "Gentle herb with calming properties for sleep and digestion.",
     description:
       "Chamomile is a daisy-like plant with feathery leaves and small white flowers with yellow centers. It grows to about 1-2 feet tall and has a sweet, apple-like fragrance. There are two common varieties: German chamomile (Matricaria chamomilla) and Roman chamomile (Chamaemelum nobile), both with similar properties.",
-    image: "/placeholder.svg",
+    image: "/public/images/chamomile.jpg",
     properties: ["Carminative", "Sedative", "Anti-inflammatory", "Antispasmodic", "Mild anxiolytic"],
     classification: {
       family: "Asteraceae",
@@ -235,7 +235,7 @@ export const plants: Plant[] = [
     shortDescription: "Aromatic flowering herb known for calming properties and sleep support.",
     description:
       "Lavender is a woody, perennial herb with gray-green foliage and purple-blue flower spikes. It has a distinctive sweet, floral scent and grows in bushy shrubs that can reach 1-3 feet tall. The plant is highly valued for its essential oil, which is extracted from the flowers and used in aromatherapy, perfumery, and medicine.",
-    image: "/placeholder.svg",
+    image: "/public/images/lavender.jpg",
     properties: ["Anxiolytic", "Sedative", "Antimicrobial", "Carminative", "Antispasmodic"],
     classification: {
       family: "Lamiaceae",
@@ -523,7 +523,7 @@ export const plants: Plant[] = [
     shortDescription: "Aromatic evergreen herb that enhances memory and concentration.",
     description:
       "Rosemary is an evergreen shrub with fragrant, needle-like leaves and blue, purple, pink, or white flowers. It has a distinctive pine-like fragrance and a bitter, astringent taste. The plant can grow up to 6 feet tall in favorable conditions and is highly valued for both culinary and medicinal uses.",
-    image: "/placeholder.svg",
+    image: "/public/images/rosemary.jpg",
     properties: ["Antioxidant", "Antimicrobial", "Carminative", "Nootropic", "Anti-inflammatory"],
     classification: {
       family: "Lamiaceae",
@@ -571,7 +571,7 @@ export const plants: Plant[] = [
     shortDescription: "Medicinal tree with bark and sap used for pain relief and detoxification.",
     description:
       "Birch trees are deciduous hardwoods known for their distinctive white, paper-like bark that peels in thin sheets. They have simple, alternate leaves with serrated edges and produce both male and female catkins. Various parts of the tree, including the bark, leaves, and sap, have been used medicinally for centuries.",
-    image: "/images/birch.jpg",
+    image: "/public/images/birch.jpg",
     properties: ["Anti-inflammatory", "Diuretic", "Antiseptic", "Astringent", "Detoxifying"],
     classification: {
       family: "Betulaceae",
@@ -667,7 +667,7 @@ export const plants: Plant[] = [
     shortDescription: "Aromatic culinary herb with anti-inflammatory and antibacterial properties.",
     description:
       "Basil is an aromatic annual herb with glossy, oval leaves and small white or purple flowers. There are many varieties, each with its own distinctive flavor profile, ranging from sweet to spicy. The plant typically grows to 1-2 feet tall and is widely used in cooking and traditional medicine.",
-    image: "/placeholder.svg",
+    image: "/public/images/basil.jpg",
     properties: ["Anti-inflammatory", "Antibacterial", "Antioxidant", "Carminative", "Adaptogenic"],
     classification: {
       family: "Lamiaceae",
@@ -715,7 +715,7 @@ export const plants: Plant[] = [
     shortDescription: "Adaptogenic root herb that enhances energy and cognitive function.",
     description:
       "Ginseng is a perennial plant with fleshy roots and compound leaves. The root, which resembles the human body in shape, is the primary part used medicinally. It takes several years for the root to mature and develop its full medicinal properties. The plant produces small greenish-white flowers and red berries.",
-    image: "/placeholder.svg",
+    image: "/public/images/ginseng.jpg",
     properties: ["Adaptogenic", "Immunomodulatory", "Antioxidant", "Nootropic", "Anti-fatigue"],
     classification: {
       family: "Araliaceae",
