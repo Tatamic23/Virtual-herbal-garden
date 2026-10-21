@@ -147,7 +147,7 @@ export default function HomePage() {
                             className="object-cover rounded-t-lg"
                             onError={(e) => {
                               // Fallback to placeholder if image doesn't exist
-                              ;(e.target as HTMLImageElement).src = "/placeholder.svg?height=300&width=400"
+                              ;(e.target as HTMLImageElement).src = "/placeholder.svg"
                             }}
                           />
                         </div>

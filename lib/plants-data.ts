@@ -235,7 +235,7 @@ export const plants: Plant[] = [
     shortDescription: "Aromatic flowering herb known for calming properties and sleep support.",
     description:
       "Lavender is a woody, perennial herb with gray-green foliage and purple-blue flower spikes. It has a distinctive sweet, floral scent and grows in bushy shrubs that can reach 1-3 feet tall. The plant is highly valued for its essential oil, which is extracted from the flowers and used in aromatherapy, perfumery, and medicine.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/placeholder.svg",
     properties: ["Anxiolytic", "Sedative", "Antimicrobial", "Carminative", "Antispasmodic"],
     classification: {
       family: "Lamiaceae",
@@ -331,7 +331,7 @@ export const plants: Plant[] = [
   //   shortDescription: "Aromatic herb with thymol-rich seeds used for digestive ailments.",
   //   description:
   //     "Ajwain is a small, annual herb with feathery leaves and small, oval-shaped fruits (commonly called seeds) that have a strong, aromatic smell similar to thyme. The plant produces small white flowers and grows to about 2-3 feet tall. The seeds are the primary part used medicinally and in cooking.",
-  //   image: "/placeholder.svg?height=300&width=400",
+  //   image: "/placeholder.svg",
   //   properties: ["Carminative", "Antimicrobial", "Antispasmodic", "Digestive", "Expectorant"],
   //   classification: {
   //     family: "Apiaceae",
@@ -379,7 +379,7 @@ export const plants: Plant[] = [
   //   shortDescription: "Golden spice with powerful anti-inflammatory and antioxidant properties.",
   //   description:
   //     "Turmeric is a perennial herbaceous plant of the ginger family. It has long, narrow rhizomes with bright orange flesh and brown skin. The plant produces large green leaves and occasional white or pink flowers. The rhizome is harvested, boiled, dried, and ground to produce the familiar yellow-orange powder used in cooking and medicine.",
-  //   image: "/placeholder.svg?height=300&width=400",
+  //   image: "/placeholder.svg",
   //   properties: ["Anti-inflammatory", "Antioxidant", "Antimicrobial", "Hepatoprotective", "Anticancer"],
   //   classification: {
   //     family: "Zingiberaceae",
@@ -427,7 +427,7 @@ export const plants: Plant[] = [
   //   shortDescription: "Warming rhizome with digestive and anti-inflammatory benefits.",
   //   description:
   //     "Ginger is a flowering plant whose rhizome (underground stem) is widely used as a spice and traditional medicine. The plant grows up to 3-4 feet tall with narrow green leaves and produces clusters of white and pink flower buds that bloom into yellow flowers. The rhizome has a pungent, spicy flavor and aroma.",
-  //   image: "/placeholder.svg?height=300&width=400",
+  //   image: "/placeholder.svg",
   //   properties: ["Anti-inflammatory", "Antiemetic", "Carminative", "Analgesic", "Antimicrobial"],
   //   classification: {
   //     family: "Zingiberaceae",
@@ -468,54 +468,54 @@ export const plants: Plant[] = [
   //     "Can be grown indoors in containers",
   //   ],
   // },
-  {
-    id: "fenugreek",
-    name: "Fenugreek",
-    scientificName: "Trigonella foenum-graecum",
-    shortDescription: "Aromatic herb with seeds that help regulate blood sugar and increase milk production.",
-    description:
-      "Fenugreek is an annual plant with small round leaves, white flowers, and pods containing small, golden-brown seeds. The seeds have a distinctive maple-like smell and slightly bitter taste. Both the leaves and seeds are used in cooking and medicine, with the seeds being particularly valued for their therapeutic properties.",
-    image: "/placeholder.svg?height=300&width=400",
-    properties: ["Galactagogue", "Antidiabetic", "Anti-inflammatory", "Digestive", "Hypocholesterolemic"],
-    classification: {
-      family: "Fabaceae",
-      genus: "Trigonella",
-      species: "T. foenum-graecum",
-    },
-    growingConditions: {
-      sunlight: "Full sun",
-      soil: "Well-draining, fertile soil",
-      water: "Moderate, regular watering",
-      temperature: "Cool to moderate temperatures",
-    },
-    medicinalUses: [
-      "Increases breast milk production in nursing mothers",
-      "Helps regulate blood sugar levels",
-      "Reduces cholesterol",
-      "Improves digestion",
-      "Reduces inflammation",
-    ],
-    homeRemedies: [
-      {
-        ailment: "Low milk supply in nursing mothers",
-        preparation: "Soak 1 tablespoon fenugreek seeds overnight, then boil in water",
-        usage: "Drink as tea 2-3 times daily",
-      },
-      {
-        ailment: "High blood sugar",
-        preparation: "Soak 1 teaspoon fenugreek seeds overnight in water",
-        usage: "Consume the seeds and water on an empty stomach in the morning",
-      },
-    ],
-    historicalSignificance:
-      "Fenugreek has been used since ancient times in Egypt, Greece, and Rome. It was found in the tomb of Tutankhamun and was used by Hippocrates and other Greek physicians for various ailments. In traditional Chinese medicine, it's used to treat weakness and edema of the legs. In India, it has been used for centuries to enhance feminine beauty and to aid digestion.",
-    gardenBenefits: [
-      "Nitrogen-fixing plant that improves soil fertility",
-      "Attracts beneficial insects",
-      "Fast-growing green manure crop",
-      "Companion plant for many vegetables",
-    ],
-  },
+  // {
+  //   id: "fenugreek",
+  //   name: "Fenugreek",
+  //   scientificName: "Trigonella foenum-graecum",
+  //   shortDescription: "Aromatic herb with seeds that help regulate blood sugar and increase milk production.",
+  //   description:
+  //     "Fenugreek is an annual plant with small round leaves, white flowers, and pods containing small, golden-brown seeds. The seeds have a distinctive maple-like smell and slightly bitter taste. Both the leaves and seeds are used in cooking and medicine, with the seeds being particularly valued for their therapeutic properties.",
+  //   image: "/placeholder.svg",
+  //   properties: ["Galactagogue", "Antidiabetic", "Anti-inflammatory", "Digestive", "Hypocholesterolemic"],
+  //   classification: {
+  //     family: "Fabaceae",
+  //     genus: "Trigonella",
+  //     species: "T. foenum-graecum",
+  //   },
+  //   growingConditions: {
+  //     sunlight: "Full sun",
+  //     soil: "Well-draining, fertile soil",
+  //     water: "Moderate, regular watering",
+  //     temperature: "Cool to moderate temperatures",
+  //   },
+  //   medicinalUses: [
+  //     "Increases breast milk production in nursing mothers",
+  //     "Helps regulate blood sugar levels",
+  //     "Reduces cholesterol",
+  //     "Improves digestion",
+  //     "Reduces inflammation",
+  //   ],
+  //   homeRemedies: [
+  //     {
+  //       ailment: "Low milk supply in nursing mothers",
+  //       preparation: "Soak 1 tablespoon fenugreek seeds overnight, then boil in water",
+  //       usage: "Drink as tea 2-3 times daily",
+  //     },
+  //     {
+  //       ailment: "High blood sugar",
+  //       preparation: "Soak 1 teaspoon fenugreek seeds overnight in water",
+  //       usage: "Consume the seeds and water on an empty stomach in the morning",
+  //     },
+  //   ],
+  //   historicalSignificance:
+  //     "Fenugreek has been used since ancient times in Egypt, Greece, and Rome. It was found in the tomb of Tutankhamun and was used by Hippocrates and other Greek physicians for various ailments. In traditional Chinese medicine, it's used to treat weakness and edema of the legs. In India, it has been used for centuries to enhance feminine beauty and to aid digestion.",
+  //   gardenBenefits: [
+  //     "Nitrogen-fixing plant that improves soil fertility",
+  //     "Attracts beneficial insects",
+  //     "Fast-growing green manure crop",
+  //     "Companion plant for many vegetables",
+  //   ],
+  // },
   {
     id: "rosemary",
     name: "Rosemary",
@@ -523,7 +523,7 @@ export const plants: Plant[] = [
     shortDescription: "Aromatic evergreen herb that enhances memory and concentration.",
     description:
       "Rosemary is an evergreen shrub with fragrant, needle-like leaves and blue, purple, pink, or white flowers. It has a distinctive pine-like fragrance and a bitter, astringent taste. The plant can grow up to 6 feet tall in favorable conditions and is highly valued for both culinary and medicinal uses.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/placeholder.svg",
     properties: ["Antioxidant", "Antimicrobial", "Carminative", "Nootropic", "Anti-inflammatory"],
     classification: {
       family: "Lamiaceae",
@@ -612,54 +612,54 @@ export const plants: Plant[] = [
       "Tolerates poor soil conditions",
     ],
   },
-  {
-    id: "mugwort",
-    name: "Mugwort",
-    scientificName: "Artemisia vulgaris",
-    shortDescription: "Aromatic herb traditionally used for dream enhancement and digestive issues.",
-    description:
-      "Mugwort is a tall, herbaceous perennial plant with reddish-brown stems and dark green, deeply lobed leaves that are silvery-white underneath. It produces small, inconspicuous yellowish or reddish-brown flowers. The plant has a strong, sage-like aroma and slightly bitter taste.",
-    image: "/placeholder.svg?height=300&width=400",
-    properties: ["Carminative", "Emmenagogue", "Nervine", "Anthelmintic", "Oneirogenic"],
-    classification: {
-      family: "Asteraceae",
-      genus: "Artemisia",
-      species: "A. vulgaris",
-    },
-    growingConditions: {
-      sunlight: "Full sun to partial shade",
-      soil: "Well-draining, average to poor soil",
-      water: "Moderate, drought-tolerant once established",
-      temperature: "Temperate climates, hardy to zone 4",
-    },
-    medicinalUses: [
-      "Enhances dreams and promotes lucid dreaming",
-      "Relieves digestive issues and stimulates appetite",
-      "Regulates menstruation",
-      "Calms nervous tension",
-      "Treats parasitic infections",
-    ],
-    homeRemedies: [
-      {
-        ailment: "Poor digestion",
-        preparation: "Steep 1 teaspoon dried mugwort in hot water for 10 minutes",
-        usage: "Drink as tea before meals",
-      },
-      {
-        ailment: "Insomnia or restless sleep",
-        preparation: "Make a small pillow stuffed with dried mugwort",
-        usage: "Place under regular pillow to enhance dreams and improve sleep",
-      },
-    ],
-    historicalSignificance:
-      "Mugwort has been used in traditional medicine systems across Europe, Asia, and North America. In European folklore, it was believed to protect travelers from fatigue and evil spirits. In Traditional Chinese Medicine, it's used in moxibustion therapy. Native Americans used it in ceremonial smoking mixtures and as a smudging herb for purification.",
-    gardenBenefits: [
-      "Repels insects including moths and flies",
-      "Improves growth and flavor of vegetables",
-      "Attracts beneficial predatory insects",
-      "Drought-resistant once established",
-    ],
-  },
+  // {
+  //   id: "mugwort",
+  //   name: "Mugwort",
+  //   scientificName: "Artemisia vulgaris",
+  //   shortDescription: "Aromatic herb traditionally used for dream enhancement and digestive issues.",
+  //   description:
+  //     "Mugwort is a tall, herbaceous perennial plant with reddish-brown stems and dark green, deeply lobed leaves that are silvery-white underneath. It produces small, inconspicuous yellowish or reddish-brown flowers. The plant has a strong, sage-like aroma and slightly bitter taste.",
+  //   image: "/placeholder.svg",
+  //   properties: ["Carminative", "Emmenagogue", "Nervine", "Anthelmintic", "Oneirogenic"],
+  //   classification: {
+  //     family: "Asteraceae",
+  //     genus: "Artemisia",
+  //     species: "A. vulgaris",
+  //   },
+  //   growingConditions: {
+  //     sunlight: "Full sun to partial shade",
+  //     soil: "Well-draining, average to poor soil",
+  //     water: "Moderate, drought-tolerant once established",
+  //     temperature: "Temperate climates, hardy to zone 4",
+  //   },
+  //   medicinalUses: [
+  //     "Enhances dreams and promotes lucid dreaming",
+  //     "Relieves digestive issues and stimulates appetite",
+  //     "Regulates menstruation",
+  //     "Calms nervous tension",
+  //     "Treats parasitic infections",
+  //   ],
+  //   homeRemedies: [
+  //     {
+  //       ailment: "Poor digestion",
+  //       preparation: "Steep 1 teaspoon dried mugwort in hot water for 10 minutes",
+  //       usage: "Drink as tea before meals",
+  //     },
+  //     {
+  //       ailment: "Insomnia or restless sleep",
+  //       preparation: "Make a small pillow stuffed with dried mugwort",
+  //       usage: "Place under regular pillow to enhance dreams and improve sleep",
+  //     },
+  //   ],
+  //   historicalSignificance:
+  //     "Mugwort has been used in traditional medicine systems across Europe, Asia, and North America. In European folklore, it was believed to protect travelers from fatigue and evil spirits. In Traditional Chinese Medicine, it's used in moxibustion therapy. Native Americans used it in ceremonial smoking mixtures and as a smudging herb for purification.",
+  //   gardenBenefits: [
+  //     "Repels insects including moths and flies",
+  //     "Improves growth and flavor of vegetables",
+  //     "Attracts beneficial predatory insects",
+  //     "Drought-resistant once established",
+  //   ],
+  // },
   {
     id: "basil",
     name: "Basil",
@@ -667,7 +667,7 @@ export const plants: Plant[] = [
     shortDescription: "Aromatic culinary herb with anti-inflammatory and antibacterial properties.",
     description:
       "Basil is an aromatic annual herb with glossy, oval leaves and small white or purple flowers. There are many varieties, each with its own distinctive flavor profile, ranging from sweet to spicy. The plant typically grows to 1-2 feet tall and is widely used in cooking and traditional medicine.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/placeholder.svg",
     properties: ["Anti-inflammatory", "Antibacterial", "Antioxidant", "Carminative", "Adaptogenic"],
     classification: {
       family: "Lamiaceae",
@@ -715,7 +715,7 @@ export const plants: Plant[] = [
     shortDescription: "Adaptogenic root herb that enhances energy and cognitive function.",
     description:
       "Ginseng is a perennial plant with fleshy roots and compound leaves. The root, which resembles the human body in shape, is the primary part used medicinally. It takes several years for the root to mature and develop its full medicinal properties. The plant produces small greenish-white flowers and red berries.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/placeholder.svg",
     properties: ["Adaptogenic", "Immunomodulatory", "Antioxidant", "Nootropic", "Anti-fatigue"],
     classification: {
       family: "Araliaceae",
