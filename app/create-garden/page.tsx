@@ -18,13 +18,13 @@ import type * as THREE from "three"
 
 // Preload models to avoid loading issues
 const modelFiles = [
-  "/public/assets/3d/basil.glb",
-  "/public/assets/3d/rosemary.glb",
-  "/public/assets/3d/tulsi.glb",
-  "/public/assets/3d/birch.glb",
-  "/public/assets/3d/chamomile.glb",
-  "/public/assets/3d/ginseng.glb",
-  "/public/assets/3d/lavender.glb",
+  "/assets/3d/basil.glb",
+  "/assets/3d/rosemary.glb",
+  "/assets/3d/tulsi.glb",
+  "/assets/3d/birch.glb",
+  "/assets/3d/chamomile.glb",
+  "/assets/3d/ginseng.glb",
+  "/assets/3d/lavender.glb",
 ]
 
 modelFiles.forEach((path) => {
