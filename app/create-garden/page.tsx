@@ -21,23 +21,20 @@ const modelFiles = [
   "/assets/3d/basil.glb",
   "/assets/3d/rosemary.glb",
   "/assets/3d/tulsi.glb",
-  "/assets/3d/chamomile.glb",
   "/assets/3d/birch.glb",
-  // "/assets/3d/fenugreek.glb",
+  "/assets/3d/chamomile.glb",
   "/assets/3d/ginseng.glb",
   "/assets/3d/lavender.glb",
-  // "/assets/3d/mugwort.glb",
+]
 
-  // Add other models as needed
-];
 modelFiles.forEach((path) => {
-  useGLTF.preload(path);
-});
+  useGLTF.preload(path)
+})
 
 // 3D Model component for the plant palette
 function PlantModel({ id }: { id: string }) {
   const modelPath = db.getModelPath(id)
-  const gltf = useGLTF(modelPath)
+  const gltf = useGLTF(modelPath) as any
   const scene = gltf.scene
   const group = useRef<THREE.Group>(null)
   const [model, setModel] = useState<THREE.Object3D | null>(null)
@@ -80,7 +77,7 @@ function PlantModel({ id }: { id: string }) {
 // 3D Model component for placed plants in the garden
 function PlacedPlantModel({ id, scale = 1, rotation = 0 }: { id: string; scale?: number; rotation?: number }) {
   const modelPath = db.getModelPath(id)
-  const gltf = useGLTF(modelPath) as { scene: THREE.Scene }
+  const gltf = useGLTF(modelPath) as any
   const scene = gltf.scene
   const group = useRef<THREE.Group>(null)
   const [model, setModel] = useState<THREE.Object3D | null>(null)

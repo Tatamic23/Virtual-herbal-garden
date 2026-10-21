@@ -187,7 +187,7 @@ export const plants: Plant[] = [
     shortDescription: "Gentle herb with calming properties for sleep and digestion.",
     description:
       "Chamomile is a daisy-like plant with feathery leaves and small white flowers with yellow centers. It grows to about 1-2 feet tall and has a sweet, apple-like fragrance. There are two common varieties: German chamomile (Matricaria chamomilla) and Roman chamomile (Chamaemelum nobile), both with similar properties.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/placeholder.svg",
     properties: ["Carminative", "Sedative", "Anti-inflammatory", "Antispasmodic", "Mild anxiolytic"],
     classification: {
       family: "Asteraceae",
