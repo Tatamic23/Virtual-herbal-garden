@@ -119,27 +119,23 @@ class Database {
   }
 
   // Get the appropriate 3D model path for a plant
-  public getModelPath(id: string) {
-    // Map plant IDs to their model files
-    const modelMap: Record<string, string> = {
-      basil: "/assets/3d/basil.glb",
-      rosemary: "/assets/3d/rosemary.glb",
-      tulsi: "/assets/3d/tulsi.glb", // Using basil as a placeholder for tulsi
-      neem: "/assets/3d/neem.glb", 
-      aloevera: "/assets/3d/aloevera.glb",
-      // ashwagandha: "/assets/3d/ashwagandha.glb",
-      // ajwain: "/assets/3d/ajwain.glb",
-      // turmeric: "/assets/3d/turmeric.glb",
-      // ginger: "/assets/3d/ginger.glb",
-      fenugreek: "/assets/3d/fenugreek.glb",
-      birch: "/assets/3d/birch.glb",
-      mugwort: "/assets/3d/mugwort.glb",
-      ginseng: "/assets/3d/ginseng.glb",
-      chamomile: "/assets/3d/chamomile.glb",
-      lavender: "/assets/3d/lavender.glb"
-    };
-    return modelMap[id] || "";
+  public getModelPath(id: string): string {
+  const modelMap: Record<string, string> = {
+    basil: "/assets/3d/basil.glb",
+    rosemary: "/assets/3d/rosemary.glb",
+    tulsi: "/assets/3d/tulsi.glb",
+    neem: "/assets/3d/neem.glb",
+    aloevera: "/assets/3d/aloevera.glb",
+    fenugreek: "/assets/3d/fenugreek.glb",
+    birch: "/assets/3d/birch.glb",
+    mugwort: "/assets/3d/mugwort.glb",
+    ginseng: "/assets/3d/ginseng.glb",
+    chamomile: "/assets/3d/chamomile.glb",
+    lavender: "/assets/3d/lavender.glb",
   }
+
+  return modelMap[id] || "/assets/3d/basil.glb"
+}
 
   // Get background gradient for a plant
   public getPlantGradient(id: string): string {

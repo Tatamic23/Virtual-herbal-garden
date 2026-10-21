@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#e6f4ea"/>
+  <circle cx="200" cy="150" r="80" fill="#a7d7b4"/>
+  <text x="200" y="165" text-anchor="middle" font-size="24" font-family="Arial" fill="#2c5c3d">Plant Image</text>
+</svg>

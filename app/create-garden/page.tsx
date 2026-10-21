@@ -20,14 +20,13 @@ import type * as THREE from "three"
 const modelFiles = [
   "/assets/3d/basil.glb",
   "/assets/3d/rosemary.glb",
-  "/assets/3d/aloevera.glb",
-  "/assets/3d/neem.glb",
+  "/assets/3d/tulsi.glb",
   "/assets/3d/chamomile.glb",
   "/assets/3d/birch.glb",
-  "/assets/3d/fenugreek.glb",
+  // "/assets/3d/fenugreek.glb",
   "/assets/3d/ginseng.glb",
   "/assets/3d/lavender.glb",
-  "/assets/3d/mugwort.glb",
+  // "/assets/3d/mugwort.glb",
 
   // Add other models as needed
 ];
@@ -37,29 +36,25 @@ modelFiles.forEach((path) => {
 
 // 3D Model component for the plant palette
 function PlantModel({ id }: { id: string }) {
-  const modelPath = db.getModelPath(id) as string | undefined;
-  const gltf = useGLTF(modelPath) as { scene: THREE.Scene };
-  const scene = gltf.scene;
+  const modelPath = db.getModelPath(id)
+  const gltf = useGLTF(modelPath)
+  const scene = gltf.scene
   const group = useRef<THREE.Group>(null)
   const [model, setModel] = useState<THREE.Object3D | null>(null)
 
-  // Create a clone of the scene once on mount
   useEffect(() => {
-    // Create a deep clone of the scene to avoid sharing
     const clonedScene = scene.clone(true)
     setModel(clonedScene)
 
-    // Cleanup function to dispose of the model when component unmounts
     return () => {
       if (clonedScene) {
-        // Recursively dispose of geometries and materials
-        clonedScene.traverse((object) => {
-          if ((object as any).geometry) (object as any).geometry.dispose()
-          if ((object as any).material) {
-            if (Array.isArray((object as any).material)) {
-              ;(object as any).material.forEach((material: any) => material.dispose())
+        clonedScene.traverse((object: any) => {
+          if (object.geometry) object.geometry.dispose()
+          if (object.material) {
+            if (Array.isArray(object.material)) {
+              object.material.forEach((material: any) => material.dispose())
             } else {
-              ;(object as any).material.dispose()
+              object.material.dispose()
             }
           }
         })
@@ -84,33 +79,25 @@ function PlantModel({ id }: { id: string }) {
 
 // 3D Model component for placed plants in the garden
 function PlacedPlantModel({ id, scale = 1, rotation = 0 }: { id: string; scale?: number; rotation?: number }) {
-  const modelPath = db.getModelPath(id) as string | undefined
-  if (!modelPath) {
-    console.error(`Model path not found for id: ${id}`)
-    return null
-  }
-  const gltf = useGLTF(modelPath)
-  const scene = Array.isArray(gltf) ? gltf[0].scene : gltf.scene
+  const modelPath = db.getModelPath(id)
+  const gltf = useGLTF(modelPath) as { scene: THREE.Scene }
+  const scene = gltf.scene
   const group = useRef<THREE.Group>(null)
   const [model, setModel] = useState<THREE.Object3D | null>(null)
 
-  // Create a clone of the scene once on mount
   useEffect(() => {
-    // Create a deep clone of the scene to avoid sharing
     const clonedScene = scene.clone(true)
     setModel(clonedScene)
 
-    // Cleanup function to dispose of the model when component unmounts
     return () => {
       if (clonedScene) {
-        // Recursively dispose of geometries and materials
         clonedScene.traverse((object: any) => {
-          if ((object as any).geometry) (object as any).geometry.dispose()
-          if ((object as any).material) {
-            if (Array.isArray((object as any).material)) {
-              ;(object as any).material.forEach((material: any) => material.dispose())
+          if (object.geometry) object.geometry.dispose()
+          if (object.material) {
+            if (Array.isArray(object.material)) {
+              object.material.forEach((material: any) => material.dispose())
             } else {
-              ;(object as any).material.dispose()
+              object.material.dispose()
             }
           }
         })
@@ -120,7 +107,6 @@ function PlacedPlantModel({ id, scale = 1, rotation = 0 }: { id: string; scale?:
 
   useFrame((state) => {
     if (group.current) {
-      // Gentle swaying animation
       group.current.position.y = Math.sin(state.clock.getElapsedTime()) * 0.05
     }
   })
