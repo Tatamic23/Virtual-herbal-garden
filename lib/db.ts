@@ -121,16 +121,16 @@ class Database {
   // Get the appropriate 3D model path for a plant
   public getModelPath(id: string): string {
   const modelMap: Record<string, string> = {
-    basil: "/public/assets/3d/basil.glb",
-    rosemary: "/public/assets/3d/rosemary.glb",
-    tulsi: "/public/assets/3d/tulsi.glb",
-    birch: "/public/assets/3d/birch.glb",
-    ginseng: "/public/assets/3d/ginseng.glb",
-    chamomile: "/public/assets/3d/chamomile.glb",
-    lavender: "/public/assets/3d/lavender.glb",
+    basil: "/assets/3d/basil.glb",
+    rosemary: "/assets/3d/rosemary.glb",
+    tulsi: "/assets/3d/tulsi.glb",
+    birch: "/assets/3d/birch.glb",
+    ginseng: "/assets/3d/ginseng.glb",
+    chamomile: "/assets/3d/chamomile.glb",
+    lavender: "/assets/3d/lavender.glb",
   }
 
-  return modelMap[id] || "/public/assets/3d/basil.glb"
+  return modelMap[id] || "/assets/3d/basil.glb"
 }
 
   // Get background gradient for a plant
